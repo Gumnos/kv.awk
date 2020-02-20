@@ -68,3 +68,8 @@ I did change the parameter order from
 to
 "[storename] [command]"
 because I found that easier to work with.
+
+If you want to get debug output,
+set the `$DEBUG` environment variable to "y"
+
+    $ DEBUG=y kv.awk add example mykey myvalue
