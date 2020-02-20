@@ -32,6 +32,16 @@ To get the value of multiple keys:
 
     $ kv.awk example get mykey1 mykey2
 
+If you set a new value for an existing key,
+it will overwrite it:
+
+    $ kv.awk example add mykey "my first value"
+    $ kv.awk example get mykey
+    my first value
+    $ kv.awk example add mykey "my second value"
+    $ kv.awk example get mykey
+    my second value
+
 To delete a key use `delete` (or `del` or `rm`):
 
     $ kv.awk example delete mykey
