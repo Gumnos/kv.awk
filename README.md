@@ -55,7 +55,7 @@ Data is not guaranteed to stay in the same order.
 
 Inspired by [@JuanIbiapina's `shelf`](https://github.com/juanibiapina/shelf)
 which was written in Rust.
-So I decided to give it a go in `awk`
+So I decided to give it a try in `awk`
 to see how it would go.
 I did change the parameter order from
 "[command] [storename]"
