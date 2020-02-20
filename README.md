@@ -47,11 +47,17 @@ in which case it uses the current directory.
 Newlines in the key or value will break things
 but in predictable ways.
 
-Empty lines
+Empty lines,
+lines without a tab,
 and lines beginning with a "#" are ignored
 but will get overwritten/removed the next time the data-store is changed.
 
 Data is not guaranteed to stay in the same order.
+
+It doesn't do any locking,
+so concurrent access attempts
+might completely hose your data.
+So don't do that.
 
 Inspired by [@JuanIbiapina's `shelf`](https://github.com/juanibiapina/shelf)
 which was written in Rust.
