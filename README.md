@@ -9,6 +9,14 @@ and drop `kv.awk` in your `$PATH`.
 
 Or don't.  You can invoke it by full path too.
 
+You also can drop `kv.awk-completion.bash` in your `/etc/bash_completion.d/` or source it in your `~/.bashrc` to get the completion work.
+
+You can also run
+
+	sudo make install
+
+to install both the executable and the completion script.
+
 Usage:
 
     $ kv.awk <storename> <command> [args]
